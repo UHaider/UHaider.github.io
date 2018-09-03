@@ -29,6 +29,5 @@ Let us now look at the steps
    $ osc develproject openSUSE:Factory cacti
    server:monitoring
    ```
-   {:.adjust-scroll}
 
 So server:monitoring is the devel project for openSUSE:Factory/cacti package.
