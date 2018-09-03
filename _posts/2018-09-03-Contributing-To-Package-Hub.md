@@ -17,7 +17,14 @@ SUSE Package Hub packages are built and maintained utilizing the [Open Build Ser
 Open build service contains almost all popular open source software packages and chances are that the software you are interested in is already present in a project on OBS server. If you are interested in an open source software and you want that software to be present in package hub then search if the package is already present on OBS server or not. If yes, then you have less work to do. Let us assume the following  
 {:.justify-class}
 
-> `<userrname>` testuser
+> `<username>` testuser
+> `<original_package>` cacti
 
-> `<orignal_package>` cacti
+Let us now look at the steps 
+1. Step 1: Devel Project
+Find the devel project for the package and branch from there. To find devel project you can use osc. For example, if you want to know about the devel project about the cacti package in openSUSE:Factory project you can use following command
 
+> osc develproject openSUSE:Factory cacti
+>> server:monitoring
+
+So server:monitoring is the devel project for openSUSE:Factory/cacti package.
