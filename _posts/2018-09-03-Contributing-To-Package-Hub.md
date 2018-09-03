@@ -39,6 +39,6 @@ Let us now look at the steps
    osc branch server:monitoring cacti
    {:.highlight}
    This will create a new branch project 
-   > home:<your_user_name>:branches:<original_project_name> 
+   > home:`<your_user_name>`:branches:`<original_project_name>` 
 
 
