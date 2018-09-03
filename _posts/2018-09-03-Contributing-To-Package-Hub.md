@@ -28,7 +28,7 @@ Let us now look at the steps
 
    Find the _devel_ project for the package and branch from there. To find _devel_ project you can use [OSC](https://en.opensuse.org/openSUSE:OSC). For example, if you want to know about the _devel_ project of the cacti package in _openSUSE:Factory_ project you can use following command
    
-   $ osc develproject openSUSE:Factory cacti
+   $ osc develproject openSUSE:Factory cacti <br/>
    server:monitoring
    {:.highlight}
 
