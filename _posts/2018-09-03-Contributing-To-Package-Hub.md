@@ -26,12 +26,12 @@ Open build service contains almost all popular open source software packages and
 Let us now look at the steps 
 1. **Step 1: Devel Project**
 
-   Find the devel project for the package and branch from there. To find devel project you can use osc. For example, if you want to know about the devel project about the cacti package in openSUSE:Factory project you can use following command
+   Find the _devel_ project for the package and branch from there. To find devel project you can use [OSC](https://en.opensuse.org/openSUSE:OSC). For example, if you want to know about the _devel_ project of the cacti package in _openSUSE:Factory_ project you can use following command
 
    ```sh
    $ osc develproject openSUSE:Factory cacti
    server:monitoring
    ```
 
-So server:monitoring is the devel project for openSUSE:Factory/cacti package.
+So server:monitoring is the _devel_ project for openSUSE:Factory/cacti package.
 
