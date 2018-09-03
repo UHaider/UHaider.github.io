@@ -36,7 +36,7 @@ Let us now look at the steps
    
    Now branch the pacakge from the _devel_ project using the command
    
-   osc branch server:monitoring cacti
+   $ osc branch server:monitoring cacti
    {:.highlight}
    This will create a new branch project 
    > home:`<your_user_name>`:branches:`<original_project_name>` 
