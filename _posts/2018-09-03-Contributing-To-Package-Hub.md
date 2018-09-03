@@ -17,8 +17,8 @@ SUSE Package Hub packages are built and maintained utilizing the [Open Build Ser
 Open build service contains almost all popular open source software packages and chances are that the software you are interested in is already present in a project on OBS server. If you are interested in an open source software and you want that software to be present in package hub then search if the package is already present on OBS server or not. If yes, then you have less work to do. Let us assume the following  
 {:.justify-class}
 
-<username> testuser
-<original_package> cacti
+`<username>` testuser
+`<original_package>` cacti
 {:.highlight}
 
 Let us now look at the steps 
