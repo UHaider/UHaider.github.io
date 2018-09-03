@@ -31,3 +31,4 @@ Let us now look at the steps
    ```
 
 So server:monitoring is the devel project for openSUSE:Factory/cacti package.
+{:.highlight}
