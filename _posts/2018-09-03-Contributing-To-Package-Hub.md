@@ -11,3 +11,7 @@ If you are reading this blog that means you are interested in contributing to [P
 
 SUSE Package Hub packages are built and maintained utilizing the [Open Build Service (OBS)](https://build.opensuse.org/). OBS system enables developers and package maintainers to build and distribute packages from sources in an automatic, consistent and reproducible way. So, first you need to register an account at OBS. After registering the account, you should install and setup the osc tool on your computer. The rest of the blog assumes that you have completed these two steps.
 {:.justify-class}
+
+## Header 2 Contributing to Existing Software Package:
+
+Open build service contains almost all popular open source softwares and chances are that the software you are interested in is already present in a project on OBS server. If you are interested in an open source software and you want that software to be present in package hub then search if the package is already present on OBS server or not. If yes, you have less work to do. 
