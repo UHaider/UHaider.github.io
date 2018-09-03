@@ -20,6 +20,7 @@ Open build service contains almost all popular open source software packages and
 
 `<username>` testuser<br/>
 `<original_package>` cacti
+{:.highlight}
 
 
 Let us now look at the steps 
