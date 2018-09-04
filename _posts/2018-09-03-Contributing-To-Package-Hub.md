@@ -154,8 +154,8 @@ Let us now look at the steps
        {:.highlight}
 14. **Step: Submit to Backports**
    
-   Make a submit request, a maintenance request, to Backports in Package hub using the following command 
+    Make a submit request, a maintenance request, to Backports in Package hub using the following command 
    
-   $ osc submitrequest openSUSE:Factory/cacti openSUSE:Backports:SLE-12
-   {:.highlight}
+    $ osc submitrequest openSUSE:Factory/cacti openSUSE:Backports:SLE-12
+    {:.highlight}
  
