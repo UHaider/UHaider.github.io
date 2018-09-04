@@ -7,6 +7,9 @@ title: Contributing to Package Hub Step-by-Step
 If you are reading this post that means you are interested in contributing to [Package Hub](https://packagehub.suse.com). You have come to the right place. I’ll share with you the process I followed while doing my internship at [Linux Foundation](https://www.linuxfoundation.org/). I hope this blog post will help you understand the process better. Please remember to visit suse documentation also to get more insight and latest updates.
 {:.justify-class}
 
+[SUSE Package Hub](https://packagehub.suse.com/) contains popular open source packages for [SUSE Linux Enterprise Server (SLES)] (https://www.suse.com/products/server/). SUSE Package Hub packages are built and maintained by a community of users and "packagers" utilizing the Open Build Service. That means you don't need to build everything alone yourself! If you want to use an open source software package on your SLES and want that SLES remains supported and supportable when using the software, you should use the package available in SUSE Package Hub. If you need a newer version or the software package is not available in SUSE Package Hub you can always contribute and the purpose of this post is to explain the process of contributing to SUSE Package HUB using Open Build service.
+{:.justify-class}
+
 SUSE Package Hub packages are built and maintained utilizing the [Open Build Service (OBS)](https://build.opensuse.org/). OBS system enables developers and package maintainers to build and distribute packages from sources in an automatic, consistent and reproducible way. So, first you need to register an account at OBS. After registering the account, you should install and setup the osc tool on your computer. The rest of the blog assumes that you have completed these two steps.
 {:.justify-class}
 
@@ -23,6 +26,7 @@ Let us now look at the steps
 1. **Step: Devel Project**
 
    Find the _devel_ project for the package and branch from there. To find _devel_ project you can use [OSC](https://en.opensuse.org/openSUSE:OSC). For example, if you want to know about the _devel_ project of the cacti package in _openSUSE:Factory_ project you can use following command
+   {:.justify-class}
    
    $ osc develproject openSUSE:Factory cacti <br/>
    server:monitoring
