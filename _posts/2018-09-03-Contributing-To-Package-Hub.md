@@ -115,8 +115,8 @@ Let us now look at the steps
    {:.highlight}
    
 10. **Step: Verify Build Result on Server**
-   
-   Once the build at server is completed you should verify that build is "succeeded" for all build repositories that are enabled for the original package. You can check this through webpage or by using following osc command in local directory
+
+    Once the build at server is completed you should verify that build is "succeeded" for all build repositories that are enabled for the original package. You can check this through webpage or by using following osc command in local directory
    
    $ osc results –verbose
    SLE_12_SP3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s390x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;succeeded(unpublished)
@@ -129,7 +129,7 @@ SLE_11_SP4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
    
 11. **Step: Submit Changes to Original Package**
    
-   If build for all the desired repositories have a "succeeded" status create a submit request to original package by running the following command
+    If build for all the desired repositories have a "succeeded" status create a submit request to original package by running the following command
    
    $ osc submitrequest --message='Right a short message that tells about your changes' home:testuser:branches:server:monitoring cacti server:monitoring cacti
    {:.highlight}
