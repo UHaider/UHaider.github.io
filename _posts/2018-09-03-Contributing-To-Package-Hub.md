@@ -80,5 +80,40 @@ Let us now look at the steps
    
    $ osc build SLE_12_Backports  s390x
    {:.highlight}
+
+6. **Step: Test the Package**
    
+   If the package is successfully built that means, there are no build errors and you can further test your changes by installing it on the machine. If you are using zypper you can install the package
    
+   $ zypper in -fPATH-TO-RPM>
+   {:.highlight}
+   
+   Once you are satisfied that the changes you have made are working fine you are ready to commit the changes to server.
+7. **Step: Record Changes**
+   
+   The _changes_ files should be updated to record changes you made to the package. If you have fixed a bug you can refer to it using bnc#xxxxxx. Run following command in local directory to edit the changes file
+   
+   $ osc vc
+   {:.highlight}
+8. **Step: Update Version Control Status**
+   
+   Now its time to update the version control status. Run following command in local directory
+   
+   $ osc addremove
+   {:.highlight}
+   
+   After doing this make sure there are no files with status “!” or “?”. You can check this by running the command
+   
+   $ osc status
+   {:.highlight}
+   
+9. **Step: Commit to OBS Server**
+   
+   If all the files have correct status you are ready to upload the local source files into the already branched package on OBS server. Once upload completes an automatic re-build is triggered for the package. Run the following command to commit
+   
+   $ osc commit
+   {:.highlight}
+   
+10. **Step: Verify Build Result on Server**
+   
+   Once the build at server is completed you should verify that build is "succeeded" for all build repositories that are enabled for the original package. You can check this by following command
