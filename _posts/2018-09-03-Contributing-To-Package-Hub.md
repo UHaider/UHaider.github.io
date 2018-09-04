@@ -113,6 +113,7 @@ Let us now look at the steps
    
    $ osc commit
    {:.highlight}
+   
 10. **Step: Verify Build Result on Server**
    
    Once the build at server is completed you should verify that build is "succeeded" for all build repositories that are enabled for the original package. You can check this through webpage or by using following osc command in local directory
@@ -125,6 +126,7 @@ SLE_12_SP2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
 SLE_12_SP1_Backports&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x86_64&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;succeeded(unpublished)
 SLE_11_SP4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i586&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disabled
 {:.highlight} 
+   
 11. **Step: Submit Changes to Original Package**
    
    If build for all the desired repositories have a "succeeded" status create a submit request to original package by running the following command
