@@ -22,7 +22,7 @@ Open build service contains almost all popular open source software packages and
 
 
 Let us now look at the steps 
-1. **Step 1: Devel Project**
+1. **Step: Devel Project**
 
    Find the _devel_ project for the package and branch from there. To find _devel_ project you can use [OSC](https://en.opensuse.org/openSUSE:OSC). For example, if you want to know about the _devel_ project of the cacti package in _openSUSE:Factory_ project you can use following command
    
@@ -30,7 +30,7 @@ Let us now look at the steps
    server:monitoring
    {:.highlight}
    So server:monitoring is the _devel_ project for openSUSE:Factory/cacti package.
-2. **Step 2: Branching**
+2. **Step: Branching**
    
    Now branch the pacakge from the _devel_ project using the command
    
@@ -39,7 +39,7 @@ Let us now look at the steps
    This will create a new branch project 
    > home:`<your_user_name>`:branches:`<original_project_name>` 
 
-3. **Step 3: Checkout**
+3. **Step: Checkout**
    
    You should now checkout the package to download all the files from the server to a local directory. The generic command for checking out a branched package is 
    
@@ -58,8 +58,27 @@ Let us now look at the steps
    $ cd home:testuser:branches:server:monitoring/cacti
    $ umask 0022
 
-4. **Step 4: Make Changes**
-     * Go to the local directory and make changes you want. You may
-     * Fix a bug in the source
+4. **Step: Make Changes**
+    Go to the local directory and make changes you want. You may
+     * Fix a bug in the package
      * Make changes to specfile (eg to add support for an architecture like s390x, or to update the version of package)
 
+5. **Step: Building Package**
+   Locally build the package to verify any changes you made. To get the possible build targets for your package use following command inside the local directory
+   
+   $ osc repos
+   openSUSE_Tumbleweed                x86_64
+   openSUSE_Tumbleweed                i586
+   openSUSE_Leap_42.3                 x86_64
+   openSUSE_Leap_15.0                 x86_64
+   SLE_12_SP1                         x86_64
+   SLE_12_Backports                   s390x
+   SLE_12                             x86_64
+   {:.highlight}
+   
+   The output is a two column table. First column represents the REPOSITORY and second column represents ARCH. Lets say you are intersted in s390x and SLE_12_Backports then use the following command to build the package
+   
+   $ osc build SLE_12_Backports  s390x
+   {:.highlight}
+   
+   
