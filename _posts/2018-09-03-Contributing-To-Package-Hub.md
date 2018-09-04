@@ -139,11 +139,23 @@ Let us now look at the steps
    
     You can check the status of your submit request using osc. You can get the username of the maintainer and his email address using osc commands. This could be useful if there is a need to contact the maintainer
     
-    $ osc request show `<submit_request id>`
-    _Request Hisotry will be printed_
-    $ osc maintainer server:monitoring cacti
-    `<maintainer_username`>
-    $ osc  whois `<maintainer_username>`
-    _Contact information will be printed_
-    
-    
+    $ osc request show `<submit_request id>`  
+    _Request hisotry will be printed_  
+    $ osc maintainer server:monitoring cacti  
+    `<maintainer_username`>  
+    $ osc  whois `<maintainer_username>`  
+    _Contact information will be printed_  
+ 
+13. **Step: Submit to Facatory**
+   
+    If the maintainer is happy with your submit request and accepts it, you are now ready to submit the changes to Factory. Make a submit request to Factory
+       
+       $ osc submitrequest –message='A messge for Factory' server:monitoring/cacti openSUSE:Factory cacti
+       {:.highlight}
+14. **Step: Submit to Backports**
+   
+   Make a submit request, a maintenance request, to Backports in Package hub using the following command 
+   
+   $ osc submitrequest openSUSE:Factory/cacti openSUSE:Backports:SLE-12
+   {:.highlight}
+ 
