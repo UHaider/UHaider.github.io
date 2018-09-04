@@ -1,23 +1,35 @@
 ---
 layout: post
-title: Contributing to Package Hub Step-by-Step
+title: Contributing to SUSE Package Hub Step-by-Step
 ---
-
+## Introduction
 
 If you are reading this post that means you are interested in contributing to [Package Hub](https://packagehub.suse.com). You have come to the right place. I’ll share with you the process I followed while doing my internship at [Linux Foundation](https://www.linuxfoundation.org/). I hope this blog post will help you understand the process better. Please remember to visit suse documentation also to get more insight and latest updates.
 {:.justify-class}
 
+### SUSE Package Hub
 [SUSE Package Hub](https://packagehub.suse.com/) contains popular open source packages for [SUSE Linux Enterprise Server (SLES)](https://www.suse.com/products/server/). SUSE Package Hub packages are built and maintained by a community of users and "packagers" utilizing the [Open Build Service (OBS)](https://build.opensuse.org/). That means you don't need to build everything alone yourself! If you want to use an open source software package on your SLES and want that SLES remains supported and supportable when using the software, you should use the package available in SUSE Package Hub. If you need a newer version or the software package is not available in SUSE Package Hub you can always contribute and the purpose of this post is to explain the process of contributing to SUSE Package HUB using Open Build service.
 {:.justify-class}
 
+### openSUSE Backports
 [openSUSE Backports or openSUSE:Backports](https://en.opensuse.org/Portal:Backports) is the community project maintaining the packages that feed into SUSE Package Hub. These packages are built using the openSUSE Build Service a publically hosted instance of the Open Build Service. The packages are essentially copies of packages from openSUSE distributions built for use with SUSE Linux Enterprise products.
 {:.justify-class}
 
-Factory is built in its own project [openSUSE:Factory](https://build.opensuse.org/project/show/openSUSE:Factory) on OBS. The project contains large number of packages and maintains the rolling development codebase for _openSUSE Tumbleweed_ and _openSUSE Leap_ distributions. The exact same packages qualified and approved for those distributions is used for the SUSE Package Hub. So, any package that is going into SUSE Package Hub must be first checked into [openSUSE:Factory](https://build.opensuse.org/project/show/openSUSE:Factory).
+### Factory Project
+Factory is built in its own project [openSUSE:Factory](https://build.opensuse.org/project/show/openSUSE:Factory) on OBS. The project contains large number of packages and maintains the rolling development codebase for **_openSUSE Tumbleweed_** and **_openSUSE Leap_** distributions. The exact same packages qualified and approved for those distributions is used for the SUSE Package Hub. So, any package that is going into SUSE Package Hub must be first checked into [openSUSE:Factory](https://build.opensuse.org/project/show/openSUSE:Factory).
+{:.justify-class}
+
+### Devel Projects
+All the development work for the packages in openSUSE:Factory project is done in packages present in respective **_devel projects_**. All the contributions to a package like bug fixing, version upgrate etc, are submitted to the pacakge in _devel project_. You can get a list of current devel projects that are feeding to openSUSE:Factory [here](https://build.opensuse.org/stage/project/status?project=openSUSE%3AFactory).
 {:.justify-class}
 
 
-SUSE Package Hub packages are built and maintained utilizing the [Open Build Service (OBS)](https://build.opensuse.org/). OBS system enables developers and package maintainers to build and distribute packages from sources in an automatic, consistent and reproducible way. So, first you need to register an account at OBS. After registering the account, you should install and setup the osc tool on your computer. The rest of the blog assumes that you have completed these two steps.
+### Concept
+The main concept is that in order to contribute to SUSE Package Hub you need to have an account on OBS public server. Then you can submit your work to a devel project and subsequently to openSUSE:Factory. Once your contribution reaches in openSUSE:Factory project you are ready to create a submit (maintenance) request to openSUSE:Backports. If your request to Backports is accepted your work will be automatically submitted to SUSE Package Hub.
+{:.justify-class}
+
+### Getting Ready
+SUSE Package Hub packages are built and maintained utilizing the [Open Build Service (OBS)](https://build.opensuse.org/). OBS system enables developers and package maintainers to build and distribute packages from sources in an automatic, consistent and reproducible way. So, first you need to **register an account** at OBS server [here](https://build.opensuse.org/). After registering the account, you should install and setup the [OSC](https://en.opensuse.org/openSUSE:OSC) tool on your computer. The rest of the blog assumes that you have completed these two steps.
 {:.justify-class}
 
 ## Contributing to Existing Software Package:
