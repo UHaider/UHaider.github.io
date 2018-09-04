@@ -127,3 +127,11 @@ SLE_12_SP1_Backports&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x86_64&nbsp;&nbsp;&nbsp;
 SLE_11_SP4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i586&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disabled
 {:.highlight}
 
+11. **Step: Submit Changes to Original Package**
+   
+   If build for all the desired repositories have a "succeeded" status create a submit request to original package by running the following command
+   
+   $ osc submitrequest --message='Right a short message that tells about your changes' home:testuser:branches:server:monitoring cacti server:monitoring cacti
+   {:.highlight}
+   
+   This will create a request from your branched package to original package. The command will ouput a request id remember that. The maintainer will either accept or decline the request.
