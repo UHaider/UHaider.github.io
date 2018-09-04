@@ -43,7 +43,7 @@ Let us now look at the steps
    
    You should now checkout the package to download all the files from the server to a local directory. The generic command for checking out a branched package is 
    
-   $ osc checkout home:<your_user_name>:branches:<original_project_name>/<original_package_name>
+   $ osc checkout home:`<your_user_name`>:branches:`<original_project_name`>/`<original_package_name`>
    {:.highlight}
    
    In our case the command will be
