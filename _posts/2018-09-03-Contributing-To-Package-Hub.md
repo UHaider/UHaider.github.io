@@ -3,10 +3,8 @@ layout: post
 title: Contributing to Package Hub Step-by-Step
 ---
 
-After reading this blog post you will be able to make contributions to Package Hub using Open Build Service.
-{:.justify-class}
 
-If you are reading this blog that means you are interested in contributing to [Package Hub](https://packagehub.suse.com). You have come to the right place. I’ll share with you the process I followed while doing my internship at [Linux Foundation](https://www.linuxfoundation.org/). I hope this blog post will help you understand the process better. Please remember to visit suse documentation also to get more insight and latest updates.
+If you are reading this post that means you are interested in contributing to [Package Hub](https://packagehub.suse.com). You have come to the right place. I’ll share with you the process I followed while doing my internship at [Linux Foundation](https://www.linuxfoundation.org/). I hope this blog post will help you understand the process better. Please remember to visit suse documentation also to get more insight and latest updates.
 {:.justify-class}
 
 SUSE Package Hub packages are built and maintained utilizing the [Open Build Service (OBS)](https://build.opensuse.org/). OBS system enables developers and package maintainers to build and distribute packages from sources in an automatic, consistent and reproducible way. So, first you need to register an account at OBS. After registering the account, you should install and setup the osc tool on your computer. The rest of the blog assumes that you have completed these two steps.
@@ -150,6 +148,7 @@ Let us now look at the steps
 13. **Step: Submit to Facatory**
    
     If the maintainer is happy with your submit request and accepts it, you are now ready to submit the changes to Factory. Make a submit request to Factory
+    {:.justify-class}
        
        $ osc submitrequest –message='A messge for Factory' server:monitoring/cacti openSUSE:Factory cacti
        {:.highlight}
@@ -159,4 +158,7 @@ Let us now look at the steps
    
     $ osc submitrequest openSUSE:Factory/cacti openSUSE:Backports:SLE-12
     {:.highlight}
+    
+In this post I tried to summarize the steps involved in contributing to Factory project and Package Hub. I hope that after reading this blog post you have gained more understanding on how to contribute to Factory and Package Hub using Open Build Service.
+{:.justify-class}
  
