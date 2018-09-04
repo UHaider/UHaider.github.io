@@ -67,14 +67,14 @@ Let us now look at the steps
 5. **Step: Building Package**
    Locally build the package to verify any changes you made. To get the possible build targets for your package use following command inside the local directory
    
-   $ osc repos
-   openSUSE_Tumbleweed                x86_64 <br/>
-   openSUSE_Tumbleweed                i586   <br/>
-   openSUSE_Leap_42.3                 x86_64 <br/>
-   openSUSE_Leap_15.0                 x86_64 <br/>
-   SLE_12_SP1                         x86_64 <br/>
-   SLE_12_Backports                   s390x  <br/>
-   SLE_12                             x86_64 <br/>
+   $ osc repos  
+   openSUSE_Tumbleweed&nbsp;&nbsp;&nbsp;&nbsp; x86_64 <br/>
+   openSUSE_Tumbleweed&nbsp;&nbsp;&nbsp;&nbsp; i586   <br/>
+   openSUSE_Leap_42.3&nbsp;&nbsp;&nbsp;&nbsp; x86_64 <br/>
+   openSUSE_Leap_15.0&nbsp;&nbsp;&nbsp;&nbsp; x86_64 <br/>
+   SLE_12_SP1&nbsp;&nbsp;&nbsp;&nbsp; x86_64 <br/>
+   SLE_12_Backports&nbsp;&nbsp;&nbsp;&nbsp; s390x  <br/>
+   SLE_12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x86_64 <br/>
    {:.highlight}
    
    The output is a two column table. First column represents the REPOSITORY and second column represents ARCH. Lets say you are intersted in s390x and SLE_12_Backports then use the following command to build the package
