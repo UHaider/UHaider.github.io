@@ -14,13 +14,11 @@ SUSE Package Hub packages are built and maintained utilizing the [Open Build Ser
 
 ## Contributing to Existing Software Package:
 
-Open build service contains almost all popular open source software packages and chances are that the software you are interested in is already present in a project on OBS server. If you are interested in an open source software and you want that software to be present in package hub then search if the package is already present on OBS server or not. If yes, then you have less work to do. Let us assume the following  
+Open build service contains almost all popular open source software packages and chances are that the software you are interested in is already present in a project on OBS server. If you are interested in an open source software and you want that software to be present in package hub then search if the package is already present on OBS server or not. If yes, then you have less work to do. Let us assume that the original software package you want to work on is cacti and OBS username is testuser
 {:.justify-class}
 
-
-`<username>` testuser<br/>
-`<original_package>` cacti
-{:.highlight}
+> `<username>` testuser <br/>
+> `<original_package>` cacti
 
 
 Let us now look at the steps 
@@ -32,7 +30,7 @@ Let us now look at the steps
    server:monitoring
    {:.highlight}
    So server:monitoring is the _devel_ project for openSUSE:Factory/cacti package.
-2. **Step 2: Branch**
+2. **Step 2: Branching**
    
    Now branch the pacakge from the _devel_ project using the command
    
@@ -41,4 +39,18 @@ Let us now look at the steps
    This will create a new branch project 
    > home:`<your_user_name>`:branches:`<original_project_name>` 
 
+2. **Step 3: Checkout**
+   
+   You should now checkout the package to download all the files from the server to a local directory. The generic command for checking out a branched package is 
+   
+   $ osc checkout home:<your_user_name>:branches:<original_project_name>/<original_package_name>
+   {:.highlight}
+   
+   In our case the command will be
+   
+   $ osc checkout home:testuser:branches:server:monitoring/cacti
+   {:.hightlight}
+   
+   This will download the files from the server to local directory
+   > home:testuser:branches:server:monitoring/cacti
 
