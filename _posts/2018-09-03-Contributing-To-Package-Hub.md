@@ -134,3 +134,16 @@ Let us now look at the steps
     {:.highlight}
    
     This will create a request from your branched package to original package. The command will ouput a request id remember that. The maintainer will either accept or decline the request.
+
+12. **Step: Status of Request**
+   
+    You can check the status of your submit request using osc. You can get the username of the maintainer and his email address using osc commands. This could be useful if there is a need to contact the maintainer
+    
+    $ osc request show `<submit_request id>`
+    _Request Hisotry will be printed_
+    $ osc maintainer server:monitoring cacti
+    `<maintainer_username`>
+    $ osc  whois `<maintainer_username>`
+    _Contact information will be printed_
+    
+    
