@@ -49,7 +49,7 @@ Let us now look at the steps
    In our case the command will be
    
    $ osc checkout home:testuser:branches:server:monitoring/cacti
-   {:.hightlight}
+   {:.highlight}
    
    This will download the files from the server to local directory
    > home:testuser:branches:server:monitoring/cacti
