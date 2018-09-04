@@ -39,12 +39,12 @@ Let us now look at the steps
    This will create a new branch project 
    > home:`<your_user_name>`:branches:`<original_project_name>` 
 
-2. **Step 3: Checkout**
+3. **Step 3: Checkout**
    
    You should now checkout the package to download all the files from the server to a local directory. The generic command for checking out a branched package is 
    
-   $ osc checkout home:`<your_user_name`>:branches:`<original_project_name`>/`<original_package_name`>
-   {:.highlight}
+   > osc checkout home:`<your_user_name`>:branches:`<original_project_name`>/`<original_package_name`>
+   
    
    In our case the command will be
    
@@ -53,4 +53,13 @@ Let us now look at the steps
    
    This will download the files from the server to local directory
    > home:testuser:branches:server:monitoring/cacti
+   
+   Go to the directory and set usual default mask to 0022
+   $ cd home:testuser:branches:server:monitoring/cacti
+   $ umask 0022
+
+4. **Step 4: Make Changes**
+     * Go to the local directory and make changes you want. You may
+     * Fix a bug in the source
+     * Make changes to specfile (eg to add support for an architecture like s390x, or to update the version of package)
 
