@@ -145,6 +145,7 @@ Let us now look at the steps
     `<maintainer_username`>  
     $ osc  whois `<maintainer_username>`  
     _Contact information will be printed_  
+    {:.highlight}
  
 13. **Step: Submit to Facatory**
    
