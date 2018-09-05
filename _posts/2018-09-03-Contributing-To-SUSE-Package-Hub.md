@@ -187,10 +187,13 @@ Now, let us now look at the steps invloved
        {:.highlight}
 14. **Step: Submit to Backports**
    
-    Make a submit request, a maintenance request, to Backports in Package hub using the following command 
+    After request to Factory is accepted. Make a submit request, a maintenance request, to Backports (SLE12) in using the following command 
+    {:.justify-class}
    
     $ osc submitrequest openSUSE:Factory/cacti openSUSE:Backports:SLE-12
     {:.highlight}
+    
+    Once the Package Hub team is happy with the request the package will be moved to SUSE Package Hub.
 
 ## Conclusion
 In this post I tried to summarize the steps involved in contributing to openSUSE:Factory project and SUSE Package Hub. I hope that after reading this blog post you have gained more understanding on how to contribute to Factory and SUSE Package Hub using Open Build Service.
