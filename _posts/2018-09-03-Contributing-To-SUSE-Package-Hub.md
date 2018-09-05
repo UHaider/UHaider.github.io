@@ -4,7 +4,7 @@ title: Contributing to SUSE Package Hub Step-by-Step
 ---
 ## Introduction
 
-If you are reading this post that means you are interested in contributing to [Package Hub](https://packagehub.suse.com). You have come to the right place. I’ll share with you the process I followed while doing my internship at [Linux Foundation](https://www.linuxfoundation.org/). I hope this blog post will help you understand the process better. Please remember to visit suse documentation also to get more insight and latest updates.
+If you are reading this post that means you are interested in contributing to [Package Hub](https://packagehub.suse.com). You have come to the right place. I’ll share with you the process I followed while doing my internship at [Linux Foundation](https://www.linuxfoundation.org/). I hope this blog post will help you understand the process better. Please remember to visit SUSE documentation also to get more insight and latest updates.
 {:.justify-class}
 
 ### SUSE Package Hub
@@ -34,7 +34,7 @@ SUSE Package Hub packages are built and maintained utilizing the [Open Build Ser
 
 ## Contributing to Existing Software Package:
 
-Open build service contains almost all popular open source software packages and chances are that the software you are interested in is already present in a project on OBS server. Let us assume that the package you are interested in is alraeady present in openSUSE:Factory project and you want to contribute to that. The contribution could b a bux fix, version upgrade, adding a functionality or even adding support for another architecture etc. As said earlier, when you are satisfied with the package in openSUSE:Factory you can send the package to Package Hub by a making a submit request. Let us assume that the original software package you want to work on is *_cacti_* and OBS username is *_testuser_*
+Open build service contains almost all popular open source software packages and chances are that the software you are interested in is already present in a project on OBS server. Let us assume that the package you are interested in is **_already present in openSUSE:Factory_** project and you want to contribute to that. The contribution could be a bux fix, version upgrade, adding a functionality or even adding support for another architecture etc. As said earlier, when you are satisfied with the package in openSUSE:Factory you can send the package to Package Hub by a making a submit request. Let us assume that the original software package you want to work on is **_cacti_** and OBS username is **_testuser_**
 {:.justify-class}
 
 > `<username>` testuser <br/>
