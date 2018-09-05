@@ -187,7 +187,7 @@ Now, let us now look at the steps invloved
        {:.highlight}
 14. **Step: Submit to Backports**
    
-    After request to Factory is accepted. Make a submit request, a maintenance request, to Backports (SLE12) in using the following command 
+    After request to Factory is accepted. Make a submit request, a maintenance request, to Backports (SLE12) using the following command 
     {:.justify-class}
    
     $ osc submitrequest openSUSE:Factory/cacti openSUSE:Backports:SLE-12
