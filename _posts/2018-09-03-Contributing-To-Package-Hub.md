@@ -16,7 +16,7 @@ If you are reading this post that means you are interested in contributing to [P
 {:.justify-class}
 
 ### Factory Project
-Factory is built in its own project [openSUSE:Factory](https://build.opensuse.org/project/show/openSUSE:Factory) on OBS. The project contains large number of packages and maintains the rolling development codebase for **_openSUSE Tumbleweed_** and **_openSUSE Leap_** distributions. The exact same packages qualified and approved for those distributions is used for the SUSE Package Hub. So, any package that is going into SUSE Package Hub must be first checked into [openSUSE:Factory](https://build.opensuse.org/project/show/openSUSE:Factory).
+Factory is built in its own project [openSUSE:Factory](https://build.opensuse.org/project/show/openSUSE:Factory) on public OBS server. The project contains large number of packages and maintains the rolling development codebase for **_openSUSE Tumbleweed_** and **_openSUSE Leap_** distributions. The exact same packages qualified and approved for those distributions is used for the SUSE Package Hub. So, any package that is going into SUSE Package Hub must be first checked into [openSUSE:Factory](https://build.opensuse.org/project/show/openSUSE:Factory).
 {:.justify-class}
 
 ### Devel Projects
@@ -34,14 +34,14 @@ SUSE Package Hub packages are built and maintained utilizing the [Open Build Ser
 
 ## Contributing to Existing Software Package:
 
-Open build service contains almost all popular open source software packages and chances are that the software you are interested in is already present in a project on OBS server. If you are interested in an open source software and you want that software to be present in package hub then search if the package is already present on OBS server or not. If yes, then you have less work to do. Let us assume that the original software package you want to work on is cacti and OBS username is testuser
+Open build service contains almost all popular open source software packages and chances are that the software you are interested in is already present in a project on OBS server. Let us assume that the package you are interested in is alraeady present in openSUSE:Factory project and you want to contribute to that. The contribution could b a bux fix, version upgrade, adding a functionality or even adding support for another architecture etc. As said earlier, when you are satisfied with the package in openSUSE:Factory you can send the package to Package Hub by a making a submit request. Let us assume that the original software package you want to work on is *_cacti_* and OBS username is *_testuser_*
 {:.justify-class}
 
 > `<username>` testuser <br/>
 > `<original_package>` cacti
 
 
-Let us now look at the steps 
+Now, let us now look at the steps invloved  
 1. **Step: Devel Project**
 
    Find the _devel_ project for the package and branch from there. To find _devel_ project you can use [OSC](https://en.opensuse.org/openSUSE:OSC). For example, if you want to know about the _devel_ project of the cacti package in _openSUSE:Factory_ project you can use following command
@@ -191,7 +191,10 @@ Let us now look at the steps
    
     $ osc submitrequest openSUSE:Factory/cacti openSUSE:Backports:SLE-12
     {:.highlight}
-    
-In this post I tried to summarize the steps involved in contributing to Factory project and Package Hub. I hope that after reading this blog post you have gained more understanding on how to contribute to Factory and Package Hub using Open Build Service.
+
+## Conclusion
+In this post I tried to summarize the steps involved in contributing to openSUSE:Factory project and SUSE Package Hub. I hope that after reading this blog post you have gained more understanding on how to contribute to Factory and SUSE Package Hub using Open Build Service.
 {:.justify-class}
- 
+## Acknowledgements
+
+I thank [Linux Foundation](https://www.linuxfoundation.org/) for providing me with the opportunity to work on this great open source project. I also thank my mentor Wolfgang Engel from SUSE who guided and helped me in uderstanding the process. 
