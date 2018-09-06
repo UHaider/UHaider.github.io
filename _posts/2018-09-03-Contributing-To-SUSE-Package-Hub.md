@@ -4,7 +4,7 @@ title: Contributing to SUSE Package Hub Step-by-Step
 ---
 ## Introduction
 
-If you are reading this post that means you are interested in contributing to [Package Hub](https://packagehub.suse.com). You have come to the right place. I’ll share with you the process I followed while doing my internship at [Linux Foundation](https://www.linuxfoundation.org/). I hope this blog post will help you understand the process better. Please remember to visit SUSE documentation also to get more insight and latest updates.
+If you are reading this post that means you are interested in contributing to [Package Hub](https://packagehub.suse.com). You have come to the right place. I’ll share with you the process I followed while doing my internship at [Linux Foundation](https://www.linuxfoundation.org/). During the internship I worked on different softwares and packaged them for **__s390x__** machines. Thanks to [IBM LinuxONEI Community Cloud](https://developer.ibm.com/linuxone/) because of which I was able to get a s390x machine for packaging and testing of ported packages. I hope this blog post will help you understand the process better. Please remember to visit SUSE documentation also to get more insight and latest updates.
 {:.justify-class}
 
 ### SUSE Package Hub
