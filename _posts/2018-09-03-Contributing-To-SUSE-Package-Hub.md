@@ -203,14 +203,13 @@ A new software package, package not already in Factory, can be submitted to open
 
 1. **Step: Select Devel Project**
    
-    So, first you need to find an appropriate devel project where you can maintain your package. For example if you want to maintain a package that provides network monitoring functionalities an appropriate devel project would be server:monitoring. If you think you need a new devel project you can always ask the maintainers of an existing top-level project and ask them to create a subproject for you. If there is no suitable top-level project then you can ask OBS maintainers to create a project for you by opening a [bug]( https://bugzilla.opensuse.org/enter_bug.cgi?product=openSUSE.org&component=BuildService&short_desc=New%20Project%20Space
-) or contacting them at <admin@opensuse.org>.
-{:.justify-class}
+    So, first you need to find an appropriate devel project where you can maintain your package. For example if you want to maintain a package that provides network monitoring functionalities an appropriate devel project would be server:monitoring. If you think you need a new devel project you can always ask the maintainers of an existing top-level project and ask them to create a subproject for you. If there is no suitable top-level project then you can ask OBS maintainers to create a project for you by opening a [bug]( https://bugzilla.opensuse.org/enter_bug.cgi?product=openSUSE.org&component=BuildService&short_desc=New%20Project%20Space) or contacting them at <admin@opensuse.org>.
+    {:.justify-class}
 
 2. **Step: Devel Project Whitelist**
    
     So you have a new devel project for your new package but Factory does not know about them yet. The submit request from this new devel project will be auto-declined by Factory project. So, the new project needs to be added to devel-whitelist and you can do this by asking in **#openSUSE-factory** IRC channel. The new project will be able to successfully feed the packages to Factory once it added to devel-whitelist. If you select an already present devel project that can feed into Factory you **do not need** this step.
-{:.justify-class}
+    {:.justify-class}
 
 3. **Step: Submit Package to Devel project**
    
