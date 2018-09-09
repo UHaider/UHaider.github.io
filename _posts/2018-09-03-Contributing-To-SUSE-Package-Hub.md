@@ -217,7 +217,26 @@ So you have a new devel project for your new package but Factory does not know a
    
     $ osc submitrequest -m ' Maintaining `<package-name`> in Factory with `<devel-project-name`> as devel project.'  home:username/`<package-name`>  `<devel-project-name`>
     {:.highlight}
+ 
+ 3. **Step: Submit Package to Factory**
+   
+    Submiting to Factory is easy now, just create a submit request from your devel project to Factory. Please write a description of your new package in the submit request so that it can serve as an introduction to openSUSE:Factory.
+    {:.justify-class}
+   
+    $ osc submitrequest -m ' This is a new package. Add description or a link that gives detail about the new package. ' `<devel-project-name`> openSUSE:Factory
+    {:.highlight}
 
+ 4. **Step: Submit Package to Backports**
+   
+    Submit to Backports to get the package in to SUSE Package Hub (SLE12)
+    {:.justify-class}
+   
+    $ osc submitrequest openSUSE:Factory/`<package-name`>  openSUSE:Backports:SLE-12
+    {:.highlight}
+    
+    Again once the Package Hub team is happy with the request the package will be moved to SUSE Package Hub.
+    {:.justify-class}
+    
 ## Conclusion
 In this post, I tried to summarize the steps involved in contributing to openSUSE:Factory project and SUSE Package Hub. I hope that after reading this blog post you have gained more understanding on how to contribute to Factory and SUSE Package Hub using Open Build Service.
 {:.justify-class}
