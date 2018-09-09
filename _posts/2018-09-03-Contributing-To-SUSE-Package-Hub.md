@@ -215,7 +215,7 @@ So you have a new devel project for your new package but Factory does not know a
     After you have a devel project, which is able to feed to Factory, you can now submit your  package to this devel project.
     {:.justify-class}
    
-    $ osc submitrequest -m ' Maintaining <package-name> in Factory with <devel-project-name> as devel project.'  home:username/<package-name>  <devel-project-name>
+    $ osc submitrequest -m ' Maintaining `<package-name`> in Factory with `<devel-project-name`> as devel project.'  home:username/`<package-name`>  `<devel-project-name`>
     {:.highlight}
 
 ## Conclusion
