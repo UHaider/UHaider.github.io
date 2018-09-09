@@ -206,10 +206,14 @@ A new software package, package not already in Factory, can be submitted to open
     So, first you need to find an appropriate devel project where you can maintain your package. For example if you want to maintain a package that provides network monitoring functionalities an appropriate devel project would be server:monitoring. If you think you need a new devel project you can always ask the maintainers of an existing top-level project and ask them to create a subproject for you. If there is no suitable top-level project then you can ask OBS maintainers to create a project for you by opening a [bug]( https://bugzilla.opensuse.org/enter_bug.cgi?product=openSUSE.org&component=BuildService&short_desc=New%20Project%20Space
 ) or contacting them at <admin@opensuse.org>.
 {:.justify-class}
-    So you have a new devel project for your new package but Factory does not know about them yet. The submit request from this new devel project will be auto-declined by Factory project. So, the new project needs to be added to devel-whitelist and you can do this by asking in #openSUSE-factory IRC channel. The new project will be able to successfully feed the packages to Factory once it added to devel-whitelist.
+
+
+2. **Step: Devel Project Whitelist**
+   
+    So you have a new devel project for your new package but Factory does not know about them yet. The submit request from this new devel project will be auto-declined by Factory project. So, the new project needs to be added to devel-whitelist and you can do this by asking in **#openSUSE-factory** IRC channel. The new project will be able to successfully feed the packages to Factory once it added to devel-whitelist. If you select an already present devel project that can feed into Factory you **do not need** this step.
 {:.justify-class}
 
-2. **Step: Submit Package to Devel project**
+3. **Step: Submit Package to Devel project**
    
     After you have a devel project, which is able to feed to Factory, you can now submit your  package to this devel project.
     {:.justify-class}
@@ -217,7 +221,7 @@ A new software package, package not already in Factory, can be submitted to open
     $ osc submitrequest -m ' Maintaining `<package-name`> in Factory with `<devel-project-name`> as devel project.'  home:username/`<package-name`>  `<devel-project-name`>
     {:.highlight}
  
- 3. **Step: Submit Package to Factory**
+ 4. **Step: Submit Package to Factory**
    
     Submiting to Factory is easy now, just create a submit request from your devel project to Factory. Please write a description of your new package in the submit request so that it can serve as an introduction to openSUSE:Factory.
     {:.justify-class}
@@ -225,7 +229,7 @@ A new software package, package not already in Factory, can be submitted to open
     $ osc submitrequest -m ' This is a new package. Add description or a link that gives detail about the new package. ' `<devel-project-name`> openSUSE:Factory
     {:.highlight}
 
- 4. **Step: Submit Package to Backports**
+ 5. **Step: Submit Package to Backports**
    
     Submit to Backports to get the package in to SUSE Package Hub (SLE12)
     {:.justify-class}
