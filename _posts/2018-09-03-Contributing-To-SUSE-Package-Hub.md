@@ -212,9 +212,10 @@ So you have a new devel project for your new package but Factory does not know a
 
 2. **Step: Submit Package to Devel project**
    
-   After you have a devel project, which is able to feed to Factory, you can now submit your  package to this devel project. 
-       $ osc submitrequest -m ' Maintaining <package-name> in Factory with <devel-project-name> as devel project.'  home:username/<package-name>  <devel-project-name>
-       {:.highlight}   
+   After you have a devel project, which is able to feed to Factory, you can now submit your  package to this devel project.  
+   
+    $ osc submitrequest -m ' Maintaining <package-name> in Factory with <devel-project-name> as devel project.'  home:username/<package-name>  <devel-project-name>
+    {:.highlight}   
 
 
     
