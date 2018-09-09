@@ -195,6 +195,18 @@ Now, let us now look at the steps invloved
     
     Once the Package Hub team is happy with the request the package will be moved to SUSE Package Hub.
 
+
+## Contributing New Software Package:
+
+A new software package, package not already in Factory, can be submitted to openSUSE factory through a **_devel_** project. Devel projects act as feeders to openSUSE:Factory project. Packages from home: namespace are not allowed to be directly submitted to Factory. You can get a list of current devel projects that are feeding to openSUSE:Factory [here](https://build.opensuse.org/stage/project/status?project=openSUSE%3AFactory).
+{:.justify-class}
+
+1. **Step: Select Devel Project**
+   
+    So, first you need to find an appropriate devel project where you can maintain your package. For example if you want to maintain a package that provides network monitoring functionalities an appropriate devel project would be server:monitoring. If you think you need a new devel project you can always ask the maintainers of an existing top-level project and ask them to create a subproject for you. You can ask OBS maintainers to create a project for you by opening a [bug]( https://bugzilla.opensuse.org/enter_bug.cgi?product=openSUSE.org&component=BuildService&short_desc=New%20Project%20Space
+) or contacting them admin@opensuse.org.
+
+
 ## Conclusion
 In this post, I tried to summarize the steps involved in contributing to openSUSE:Factory project and SUSE Package Hub. I hope that after reading this blog post you have gained more understanding on how to contribute to Factory and SUSE Package Hub using Open Build Service.
 {:.justify-class}
