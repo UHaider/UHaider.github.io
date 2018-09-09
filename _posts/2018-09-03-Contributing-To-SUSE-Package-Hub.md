@@ -212,13 +212,11 @@ So you have a new devel project for your new package but Factory does not know a
 
 2. **Step: Submit Package to Devel project**
    
-   After you have a devel project, which is able to feed to Factory, you can now submit your  package to this devel project.  
+    After you have a devel project, which is able to feed to Factory, you can now submit your  package to this devel project.
+    {:.justify-class}
    
     $ osc submitrequest -m ' Maintaining <package-name> in Factory with <devel-project-name> as devel project.'  home:username/<package-name>  <devel-project-name>
-    {:.highlight}   
-
-
-    
+    {:.highlight}
 
 ## Conclusion
 In this post, I tried to summarize the steps involved in contributing to openSUSE:Factory project and SUSE Package Hub. I hope that after reading this blog post you have gained more understanding on how to contribute to Factory and SUSE Package Hub using Open Build Service.
