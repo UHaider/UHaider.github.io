@@ -23,6 +23,19 @@ Factory is built in its own project [openSUSE:Factory](https://build.opensuse.or
 All the development work for the packages in openSUSE:Factory project is done in packages present in respective **_devel projects_**. All the contributions to a package like bug fixing, version upgrate etc, are submitted to the pacakge in _devel project_. You can get a list of current devel projects that are feeding to openSUSE:Factory [here](https://build.opensuse.org/stage/project/status?project=openSUSE%3AFactory).
 {:.justify-class}
 
+### Engaging with Maintainers
+The one important thing you should do **before you start** contributing is to reach out to maintainers of pacakges and top level projects. Since they are the maintainers and know best about the state of the packages and projects they can guide you where is the room for improvement and where to branch from. Engage with maintainers tell them what are you trying to do and why. Contacting the maintainers at start will result in quicker acceptance of submit requests by maintainers since they already know what you are trying to do. You can get the information about maintainer(s) of an package using following commands, in this case project is _server:monitoring_ and package is _cacti_
+{:.justify-class}
+
+$ osc maintainer server:monitoring cacti  
+`<maintainer_username`>  
+$ osc  whois `<maintainer_username>`  
+_Contact information will be printed_  
+{:.highlight}
+
+### Mailing Lists 
+Another great source of information is [Opensuse mailing lists](https://lists.opensuse.org/). Here you will find discussions between community of packagers. [Opensuse-packaging](https://lists.opensuse.org/opensuse-packaging/), [opensuse-buildservice](https://lists.opensuse.org/opensuse-buildservice/), [opensuse-factory](https://lists.opensuse.org/opensuse-factory/) lists can be very helpful for you in packaging. You can subscribe to these mailing lists and get your questions directly answered by the great experienced community. 
+{:.justify-class}
 
 ### Concept
 The main concept is that in order to contribute to SUSE Package Hub you need to have an account on OBS public server. Then you can submit your work to a devel project and subsequently to openSUSE:Factory. Once your contribution reaches in openSUSE:Factory project you are ready to create a submit (maintenance) request to openSUSE:Backports. If your request to Backports is accepted your work will be automatically submitted to SUSE Package Hub.
